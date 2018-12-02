@@ -55,7 +55,7 @@ end
  
 figure(1)
 
-plot(phaseplot,'k.','MarkerSize',1)
+plot(phaseplot,'MarkerSize',1)
 xlabel('Control parameter \mu')
 ylabel('lim_{n\rightarrow\infty} x_n')
 title ('Bifurcation Diagram')
