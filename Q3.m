@@ -15,7 +15,7 @@ x = zeros(NT,Nb);
 
 %for i = 1:8
 %a = a_vec(i);
-a= 7.22;
+a= 7.2;
 
 for k = 1:Nb   
     xtrans(1,k) = xstart;
@@ -40,12 +40,14 @@ end
 zero = zeros(Nb);
  
 figure(1)
+subplot(2,1,1)
+
 plot(b_vec,x,'k.','MarkerSize',1)
 xlabel('Control parameter b')
 ylabel('lim_{n\rightarrow\infty} x_n')
 title ('Bifurcation Diagram')
 
-figure(2)
+subplot(2,1,2)
 plot(b_vec,lambda,'r',b_vec,zero,'b')
 xlabel('Control parameter b')
 ylabel('\lambda')
